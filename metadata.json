@@ -1,0 +1,6 @@
+{
+  "name": "Shohoj Shop - সহজ শপ",
+  "description": "সহজ শপ - বাংলাদেশের দ্রুততম ১-ক্লিক হোয়াটসঅ্যাপ কমার্স স্টোরফ্রন্ট ও অ্যাডমিন ইনভেন্টরি ম্যানেজমেন্ট সিস্টেম",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,96 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile information",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "Unique user ID" },
+        "email": { "type": "string", "description": "User email address" },
+        "displayName": { "type": "string", "description": "Customer full name" },
+        "phoneNumber": { "type": "string", "description": "Customer phone number" },
+        "address": { "type": "string", "description": "Saved delivery address" },
+        "role": { "type": "string", "description": "User role: customer or admin" },
+        "createdAt": { "type": "string", "description": "ISO timestamp" }
+      },
+      "required": ["uid", "email", "displayName"]
+    },
+    "Product": {
+      "title": "Product",
+      "description": "An e-commerce catalog product available in the shop",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique product ID" },
+        "title": { "type": "string", "description": "Product display title in Bengali or English" },
+        "category": { "type": "string", "description": "Category key" },
+        "price": { "type": "number", "description": "Current selling price in BDT" },
+        "regularPrice": { "type": "number", "description": "Original regular price in BDT" },
+        "image": { "type": "string", "description": "Direct image URL" },
+        "stock": { "type": "string", "description": "Stock status" },
+        "code": { "type": "string", "description": "Product SKU code" },
+        "description": { "type": "string", "description": "Product description" },
+        "highlights": { "type": "array", "description": "Bullet points highlights" },
+        "rating": { "type": "number", "description": "Customer star rating" },
+        "reviewsCount": { "type": "number", "description": "Total reviews count" },
+        "isPopular": { "type": "boolean", "description": "Marked as popular" },
+        "isFeatured": { "type": "boolean", "description": "Featured on home page" },
+        "updatedAt": { "type": "string", "description": "ISO timestamp of last update" }
+      },
+      "required": ["id", "title", "price", "regularPrice", "image", "code"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "Customer order details placed via website or WhatsApp",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique order ID" },
+        "orderNumber": { "type": "string", "description": "Formatted order number" },
+        "customerName": { "type": "string", "description": "Name of the customer" },
+        "customerPhone": { "type": "string", "description": "Mobile number of customer" },
+        "customerAddress": { "type": "string", "description": "Full delivery address" },
+        "deliveryArea": { "type": "string", "description": "Inside Dhaka or Outside Dhaka" },
+        "items": { "type": "array", "description": "List of ordered products and quantities" },
+        "subtotal": { "type": "number", "description": "Subtotal amount in BDT" },
+        "deliveryCharge": { "type": "number", "description": "Delivery charge in BDT" },
+        "totalAmount": { "type": "number", "description": "Total order amount payable in BDT" },
+        "status": { "type": "string", "description": "Order status: pending, confirmed, processing, shipped, delivered, cancelled" },
+        "paymentMethod": { "type": "string", "description": "Cash On Delivery or Online" },
+        "createdAt": { "type": "string", "description": "ISO timestamp" }
+      },
+      "required": ["id", "customerName", "customerPhone", "customerAddress", "totalAmount", "status"]
+    },
+    "ChatMessage": {
+      "title": "ChatMessage",
+      "description": "Live support chat message between customer and store admin",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique message ID" },
+        "sessionId": { "type": "string", "description": "Customer session ID or phone identifier" },
+        "sender": { "type": "string", "description": "Sender role: 'customer' or 'admin'" },
+        "senderName": { "type": "string", "description": "Display name of sender" },
+        "senderPhone": { "type": "string", "description": "Optional customer phone number" },
+        "text": { "type": "string", "description": "Message content" },
+        "createdAt": { "type": "string", "description": "ISO timestamp" }
+      },
+      "required": ["id", "sessionId", "sender", "text", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "User" },
+      "description": "Collection of user profiles"
+    },
+    "/products/{productId}": {
+      "schema": { "$ref": "Product" },
+      "description": "Collection of all e-commerce products"
+    },
+    "/orders/{orderId}": {
+      "schema": { "$ref": "Order" },
+      "description": "Collection of customer orders"
+    },
+    "/chat_messages/{messageId}": {
+      "schema": { "$ref": "ChatMessage" },
+      "description": "Collection of real-time customer and support messages"
+    }
+  }
+}

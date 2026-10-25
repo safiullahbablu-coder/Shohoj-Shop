@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+
+<html lang="bn"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>সহজ শপ - অ্যাডমিন ড্যাশবোর্ড</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {"darkMode":"class","theme":{"extend":{"colors":{"primary":"#006948","tertiary-container":"#00873c","surface-container":"#eaedff","secondary-container":"#fd761a","inverse-on-surface":"#eef0ff","primary-fixed":"#85f8c4","surface-variant":"#dae2fd","surface-container-low":"#f2f3ff","surface":"#faf8ff","secondary-fixed":"#ffdbca","on-error-container":"#93000a","tertiary-fixed":"#66ff8e","surface-container-lowest":"#ffffff","error":"#ba1a1a","on-primary-fixed-variant":"#005137","primary-container":"#00855d","on-primary":"#ffffff","on-primary-fixed":"#002114","secondary-fixed-dim":"#ffb690","inverse-primary":"#68dba9","on-secondary-fixed-variant":"#783200","surface-dim":"#d2d9f4","on-secondary":"#ffffff","tertiary":"#006b2e","outline":"#6d7a72","inverse-surface":"#283044","on-tertiary-container":"#f7fff3","background":"#faf8ff","on-tertiary-fixed":"#002109","on-secondary-container":"#5c2400","on-error":"#ffffff","on-tertiary-fixed-variant":"#005322","on-primary-container":"#f5fff7","surface-container-highest":"#dae2fd","error-container":"#ffdad6","on-secondary-fixed":"#341100","surface-tint":"#006c4a","on-tertiary":"#ffffff","secondary":"#9d4300","tertiary-fixed-dim":"#3de273","outline-variant":"#bccac0","on-surface":"#131b2e","on-surface-variant":"#3d4a42","on-background":"#131b2e","primary-fixed-dim":"#68dba9","surface-bright":"#faf8ff","surface-container-high":"#e2e7ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-desktop":"1.5rem","margin":"1rem","gutter":"1rem","space-xl":"2.5rem","space-lg":"1.5rem","space-xs":"0.25rem","space-sm":"0.5rem","margin-tablet":"2rem","margin-desktop":"3rem","space-md":"1rem"},"fontFamily":{"headline-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"body-md":["Noto Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-sm":["Noto Sans"],"body-lg":["Noto Sans"],"label-md":["Plus Jakarta Sans"],"display-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"]},"fontSize":{"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"display-mobile":["34px",{"lineHeight":"42px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"display":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"800"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest border-r border-outline-variant/30 z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm border-b border-outline-variant/20"><img alt="সহজ শপ" class="w-9 h-9 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida/AEtjO1XyAdPdR89CLsvf3aRb45OUmq_I2j-fcmlfV1gfUR-MhSuB-FxF_fUzH-5NZBW41ktPf6qg9paF9ddBuUWY0k-gIPAXuTgIeqkgHH7cQJt3hcxGUhGB8tJsnIrTFtrcknU4K-1eENHlvuDpEn2FobveWO52AyzCA-_jBUzA7xm9TcJKragb5JtItNcU0-8hleCDsQSEgpB4Hf-XgJHDEOwMxJxmlpgpcfeJBg4QoSEGaIuJx9-WMNZ3gu4"/><div class="flex flex-col"><span class="font-headline-sm text-label-lg font-bold text-primary">সহজ শপ</span><span class="font-label-sm text-label-sm text-on-surface-variant">অ্যাডমিন ড্যাশবোর্ড</span></div></div><div class="p-space-md"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm font-semibold">ম্যানেজমেন্ট মেনু</span><nav class="mt-space-sm space-y-1" data-active-classes="bg-primary-container text-on-primary-container font-bold"><a aria-current="page" class="flex items-center gap-3 px-space-md py-2.5 rounded-lg transition-colors bg-primary-container text-on-primary-container font-bold" data-path="admin-dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span>ড্যাশবোর্ড সামারি</a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-colors" data-path="admin-orders" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span>অর্ডার তালিকা</a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-colors" data-path="admin-products" href="#"><span class="material-symbols-outlined text-[20px]">category</span>পণ্য ক্যাটালগ</a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-colors" data-path="admin-analytics" href="#"><span class="material-symbols-outlined text-[20px]">monitoring</span>বিক্রয় বিশ্লেষণ</a></nav></div></div><div class="p-space-md border-t border-outline-variant/20"><a class="flex items-center justify-center gap-2 w-full py-2.5 px-space-md rounded-xl bg-surface-container-high text-primary hover:bg-surface-variant font-label-lg text-label-lg font-bold transition-colors" data-path="storefront" href="#"><span class="material-symbols-outlined text-[18px]">storefront</span>গ্রাহক স্টোরফ্রন্ট</a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/30 z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><span class="font-label-md text-label-md bg-secondary-fixed text-on-secondary-fixed px-2.5 py-1 rounded-full font-bold">লাইভ স্টোর কানেক্টেড</span></div><div class="flex items-center gap-space-md"><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span></button><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">settings</span></button><div class="flex items-center gap-space-sm pl-space-sm border-l border-outline-variant/40"><div class="text-right hidden sm:block"><div class="font-label-md text-label-md font-bold text-on-surface">স্টোর ম্যানেজার</div><div class="font-label-sm text-label-sm text-on-surface-variant">admin@shohojshop.com</div></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/40" src="https://lh3.googleusercontent.com/aida/AEtjO1XyAdPdR89CLsvf3aRb45OUmq_I2j-fcmlfV1gfUR-MhSuB-FxF_fUzH-5NZBW41ktPf6qg9paF9ddBuUWY0k-gIPAXuTgIeqkgHH7cQJt3hcxGUhGB8tJsnIrTFtrcknU4K-1eENHlvuDpEn2FobveWO52AyzCA-_jBUzA7xm9TcJKragb5JtItNcU0-8hleCDsQSEgpB4Hf-XgJHDEOwMxJxmlpgpcfeJBg4QoSEGaIuJx9-WMNZ3gu4"/></div></div></header><main class="relative pt-16 bg-surface min-h-screen px-space-lg py-space-lg"><div class="flex flex-col w-full space-y-space-xl">
+<!-- Top Operational Banner & Security Authentication Barrier Bar -->
+<section class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md w-full lg:w-auto">
+<div class="w-12 h-12 rounded-xl bg-primary-container/15 flex items-center justify-center text-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[28px]">admin_panel_settings</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">অ্যাডমিন কন্ট্রোল সেন্টার</span>
+<span class="bg-primary/10 text-primary font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-bold flex items-center gap-1.5" id="authStatusPill">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            সক্রিয় সেশন (PIN আনলকড)
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">সহজ শপের মূল ডাটাবেজ, হোয়াটসঅ্যাপ অর্ডার রাউটিং এবং পণ্য স্টক নিয়ন্ত্রণ</p>
+</div>
+</div>
+<!-- Quick PIN Simulation & Status Bar -->
+<div class="flex flex-wrap items-center gap-space-sm w-full lg:w-auto justify-end">
+<div class="relative flex items-center bg-surface-container-low rounded-lg px-3 py-1.5 shadow-inner">
+<span class="material-symbols-outlined text-outline text-[18px] mr-1.5">lock</span>
+<input class="w-20 bg-transparent text-center font-label-md text-label-md font-bold tracking-widest text-on-surface focus:outline-none" id="pinCodeInput" maxlength="6" placeholder="PIN" type="password" value="1234"/>
+<button class="ml-2 px-2.5 py-1 bg-surface-container-highest text-primary font-label-sm text-label-sm rounded hover:bg-primary hover:text-on-primary transition-all font-bold" onclick="verifyPin()" type="button">
+          যাচাই
+        </button>
+</div>
+<button class="px-3.5 py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-error-container hover:text-on-error-container transition-colors flex items-center gap-1.5 font-label-md text-label-md font-semibold" onclick="triggerLogout()" type="button">
+<span class="material-symbols-outlined text-[18px]">logout</span>
+        লগআউট
+      </button>
+<a class="px-4 py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-all flex items-center gap-2 font-label-lg text-label-lg font-bold shadow-md" data-path="storefront" href="#">
+<span class="material-symbols-outlined text-[18px]">storefront</span>
+        কাস্টমার স্টোরফ্রন্ট দেখুন
+      </a>
+</div>
+</section>
+<!-- 4 KPI Metric Cards Grid -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface-variant">মোট প্রোডাক্ট ক্যাটালগ</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">inventory</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="font-headline-lg text-headline-lg font-extrabold text-on-surface tracking-tight" id="kpiTotalCount">২৪টি</div>
+<div class="flex items-center gap-1.5 mt-1 font-body-sm text-body-sm text-tertiary">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span class="font-medium">+৩টি এই সপ্তাহে যুক্ত হয়েছে</span>
+</div>
+</div>
+<div class="absolute -right-4 -bottom-4 w-20 h-20 bg-primary/5 rounded-full pointer-events-none group-hover:scale-125 transition-transform"></div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface-variant">সক্রিয় স্টক (In-Stock)</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="font-headline-lg text-headline-lg font-extrabold text-on-surface tracking-tight" id="kpiInStock">২১টি</div>
+<div class="flex items-center gap-1.5 mt-1 font-body-sm text-body-sm text-secondary">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span class="font-medium">৩টি স্টকে অনুপস্থিত</span>
+</div>
+</div>
+<div class="absolute -right-4 -bottom-4 w-20 h-20 bg-tertiary-container/5 rounded-full pointer-events-none group-hover:scale-125 transition-transform"></div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface-variant">আজকের হোয়াটসঅ্যাপ অর্ডার</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">chat</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="font-headline-lg text-headline-lg font-extrabold text-on-surface tracking-tight">১৮টি</div>
+<div class="flex items-center gap-1.5 mt-1 font-body-sm text-body-sm text-tertiary">
+<span class="material-symbols-outlined text-[16px]">call_received</span>
+<span class="font-medium">৯০% কনভার্সন রেট</span>
+</div>
+</div>
+<div class="absolute -right-4 -bottom-4 w-20 h-20 bg-secondary/5 rounded-full pointer-events-none group-hover:scale-125 transition-transform"></div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface-variant">মোট বিক্রয় (আজ)</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">payments</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="font-headline-lg text-headline-lg font-extrabold text-primary tracking-tight">৳৪৫,২০০</div>
+<div class="flex items-center gap-1.5 mt-1 font-body-sm text-body-sm text-tertiary">
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+<span class="font-medium">+১২.৫% গতকালকের চেয়ে</span>
+</div>
+</div>
+<div class="absolute -right-4 -bottom-4 w-20 h-20 bg-primary/5 rounded-full pointer-events-none group-hover:scale-125 transition-transform"></div>
+</div>
+</section>
+<!-- Dual Layout: WhatsApp Store Engine & Firebase Realtime Synchronization Architecture -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: WhatsApp Store Configuration Card (7 Cols) -->
+<section class="lg:col-span-7 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-md mb-space-md bg-surface-container-low/40 p-4 rounded-xl">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-tertiary-container text-on-tertiary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[22px]">mark_chat_unread</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">হোয়াটসঅ্যাপ অর্ডার ইন্টিগ্রেশন</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">গ্রাহকের ক্লিক মাত্রেই তৈরি হবে কাস্টম অর্ডার মেসেজ</p>
+</div>
+</div>
+<span class="bg-surface-container-highest text-primary font-label-sm text-label-sm px-3 py-1 rounded-full font-bold">API v2.4</span>
+</div>
+<form class="space-y-space-md" id="whatsappConfigForm" onsubmit="saveWhatsappSettings(event)">
+<div>
+<label class="block font-label-md text-label-md font-bold text-on-surface mb-1">
+              প্রধান হোয়াটসঅ্যাপ ফোন নম্বর (বাংলাদেশ কান্ট্রি কোড সহ)
+            </label>
+<div class="relative">
+<span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[20px]">phone_iphone</span>
+</span>
+<input class="w-full pl-11 pr-4 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-label-lg text-label-lg focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="waPhoneNumber" required="" type="text" value="+8801712345678"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 block">উদাহরণ: +8801712345678 (কোন স্পেস বা হাইফেন ছাড়া)</span>
+</div>
+<div>
+<label class="block font-label-md text-label-md font-bold text-on-surface mb-1">
+              অর্ডার বার্তা প্রিভিউ টেমপ্লেট
+            </label>
+<textarea class="w-full p-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary shadow-inner leading-relaxed" id="waTemplate" rows="4">আসসালামু আলাইকুম সহজ শপ! 🛒
+আমি আপনার স্টোর থেকে নিম্নোক্ত পণ্যটি অর্ডার করতে চাই:
+- পণ্য: {PRODUCT_NAME}
+- মূল্য: ৳{PRICE}
+- কোড: #{PRODUCT_ID}
+দয়া করে আমার ডেলিভারি প্রক্রিয়া সম্পন্ন করুন।</textarea>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-sm text-label-sm bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant font-semibold">{PRODUCT_NAME}</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant font-semibold">{PRICE}</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant font-semibold">{PRODUCT_ID}</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-sm">
+<button class="px-4 py-2.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors flex items-center gap-2 font-label-lg text-label-lg font-bold" onclick="previewCustomerOrderMessage()" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+              টেস্ট মেসেজ প্রিভিউ
+            </button>
+<button class="px-6 py-2.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-all flex items-center gap-2 font-label-lg text-label-lg font-bold shadow-md" type="submit">
+<span class="material-symbols-outlined text-[18px]">save</span>
+              কনফিগারেশন সংরক্ষণ করুন
+            </button>
+</div>
+</form>
+</div>
+<!-- Live Test Output Bubble -->
+<div class="mt-space-md p-space-md bg-surface-container-low rounded-xl" id="waPreviewBox">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container"></span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface uppercase tracking-wider">হোয়াটসঅ্যাপ প্রিভিউ সিমুলেশন:</span>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-lg shadow-sm text-body-sm font-body-sm text-on-surface leading-relaxed whitespace-pre-line" id="previewTextContent">
+          আসসালামু আলাইকুম সহজ শপ! 🛒
+          আমি আপনার স্টোর থেকে নিম্নোক্ত পণ্যটি অর্ডার করতে চাই:
+          - পণ্য: প্রিমিয়াম সুন্দরবন খাঁটি মধু (৫০০ গ্রাম)
+          - মূল্য: ৳৭৫০
+          - কোড: #PRD-882
+          দয়া করে আমার ডেলিভারি প্রক্রিয়া সম্পন্ন করুন।
+        </div>
+</div>
+</section>
+<!-- Right Column: Cloud Architecture & Realtime Database Sync Card (5 Cols) -->
+<section class="lg:col-span-5 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-md mb-space-md bg-surface-container-low/40 p-4 rounded-xl">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[22px]">cloud_sync</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">ফায়ারবেস ডাটা সিঙ্ক</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">রিয়েলটাইম ক্লাউড স্টোরেজ ও নো-এসকিউএল ডাটাবেজ</p>
+</div>
+</div>
+</div>
+<!-- Connection Architecture Status -->
+<div class="space-y-space-md">
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-container text-[24px]">sensors</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">কানেকশন স্ট্যাটাস</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Firestore Realtime Listener</div>
+</div>
+</div>
+<span class="bg-primary-container text-on-primary-container font-label-sm text-label-sm px-2.5 py-1 rounded-full font-bold">
+              কানেক্টেড 🟢
+            </span>
+</div>
+<div class="space-y-2">
+<span class="font-label-sm text-label-sm text-outline font-bold uppercase tracking-wider">সিঙ্ক করা কালেকশনসমূহ</span>
+<div class="p-3 rounded-lg bg-surface-container-high/60 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[18px]">folder</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">store_config/whatsapp</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">সিঙ্কড (০.২ সেকেন্ড পূর্বে)</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-high/60 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[18px]">folder_special</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">products/{productId}</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">২৪টি অবজেক্ট লোডেড</span>
+</div>
+</div>
+<!-- Graphic Visual: Cloud Ping Sparkline & Sync Metric -->
+<div class="p-space-md bg-surface-container-low rounded-xl">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant">ক্লাউড রেসপন্স রেট</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">২৪ms লেটেন্সি</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500" style="width: 94%;"></div>
+</div>
+<div class="flex justify-between items-center mt-2 text-label-sm font-label-sm text-outline">
+<span>আপটাইম: ৯৯.৯%</span>
+<span>SSL TLS 1.3 সুরক্ষিত</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md">
+<button class="w-full py-2.5 rounded-lg bg-surface-container-high text-primary hover:bg-surface-variant transition-colors flex items-center justify-center gap-2 font-label-lg text-label-lg font-bold" id="syncBtn" onclick="triggerManualSync()" type="button">
+<span class="material-symbols-outlined text-[20px] transition-transform duration-700" id="syncIcon">sync</span>
+          ডাটা সিঙ্ক ও ক্লাউড ব্যাকআপ চালান
+        </button>
+</div>
+</section>
+</div>
+<!-- Product Management Section: Add Product Form Modal/Accordion & Filter Tools -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-lg">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">পণ্য ইনভেন্টরি ম্যানেজমেন্ট</h2>
+<span class="bg-primary/10 text-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full font-bold">CRUD হাব</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">দোকানের প্রতিটি আইটেমের তথ্য, স্টক এবং মূল্য পরিবর্তন করুন</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-5 py-2.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-all flex items-center gap-2 font-label-lg text-label-lg font-bold shadow-md" onclick="toggleAddProductForm()" type="button">
+<span class="material-symbols-outlined text-[20px]" id="addToggleIcon">add_circle</span>
+<span id="addToggleLabel">নতুন প্রোডাক্ট যোগ করুন</span>
+</button>
+</div>
+</div>
+<!-- Collapsible Add/Edit Product Form -->
+<div class="hidden mb-space-xl p-space-lg bg-surface-container-low rounded-xl shadow-inner" id="productFormContainer">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">post_add</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface" id="formHeaderTitle">নতুন পণ্য অন্তর্ভুক্তি</span>
+</div>
+<button class="text-outline hover:text-error transition-colors" onclick="resetAndCloseForm()" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<form class="space-y-space-md" id="productCrudForm" onsubmit="handleProductSubmit(event)">
+<input id="editingProductId" type="hidden" value=""/>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Product Title (8 Cols) -->
+<div class="md:col-span-8">
+<label class="block font-label-md text-label-md font-bold text-on-surface mb-1">প্রোডাক্টের নাম *</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="pTitle" placeholder="যেমন: প্রিমিয়াম খাঁটি গাওয়া ঘি (১ কেজি)" required="" type="text"/>
+</div>
+<!-- Category (4 Cols) -->
+<div class="md:col-span-4">
+<label class="block font-label-md text-label-md font-bold text-on-surface mb-1">ক্যাটাগরি *</label>
+<select class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="pCategory" required="">
+<option value="অর্গানিক ফুড">অর্গানিক ফুড</option>
+<option value="ইলেকট্রনিক্স">ইলেকট্রনিক্স</option>
+<option value="ফ্যাশন ও লাইফস্টাইল">ফ্যাশন ও লাইফস্টাইল</option>
+<option value="গৃহস্থালী সরঞ্জাম">গৃহস্থালী সরঞ্জাম</option>
+<option value="সৌন্দর্য চর্চা">সৌন্দর্য চর্চা</option>
+</select>
+</div>
+<!-- Regular Price (3 Cols) -->
+<div class="md:col-span-3">
+<label class="block font-label-md text-label-md font-bold text-on-surface mb-1">নিয়মিত মূল্য (৳) *</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="pRegularPrice" placeholder="1200" required="" type="number"/>
+</div>
+<!-- Discounted Price (3 Cols) -->
+<div class="md:col-span-3">
+<label class="block font-label-md text-label-md font-bold text-on-surface mb-1">অফার মূল্য (৳) *</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="pDiscountPrice" placeholder="950" required="" type="number"/>
+</div>
+<!-- Stock Status Switch (3 Cols) -->
+<div class="md:col-span-3">
+<label class="block font-label-md text-label-md font-bold text-on-surface mb-1">স্টক প্রাপ্যতা</label>
+<div class="flex items-center gap-3 h-11 px-3 bg-surface-container-lowest rounded-lg shadow-sm">
+<input checked="" class="w-5 h-5 accent-primary rounded cursor-pointer" id="pInStockSwitch" type="checkbox"/>
+<label class="font-label-md text-label-md font-bold text-primary cursor-pointer" for="pInStockSwitch" id="stockStatusLabel">
+                ইন স্টক (In Stock)
+              </label>
+</div>
+</div>
+<!-- Image URL (3 Cols) -->
+<div class="md:col-span-3">
+<label class="block font-label-md text-label-md font-bold text-on-surface mb-1">ছবির লিংক / সোর্স *</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="pImage" required="" type="text" value="placeholder"/>
+</div>
+<!-- Description (12 Cols) -->
+<div class="md:col-span-12">
+<label class="block font-label-md text-label-md font-bold text-on-surface mb-1">পণ্যের সংক্ষিপ্ত বিবরণ</label>
+<textarea class="w-full p-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="pDescription" placeholder="পণ্য সম্পর্কে মূল তথ্য ও আকর্ষণীয় বৈশিষ্ট্য লিখুন..." rows="2"></textarea>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+            ফায়ারবেস ক্লাউড স্টোরেজে স্বয়ংক্রিয়ভাবে সেভ হবে
+          </div>
+<div class="flex items-center gap-space-sm">
+<button class="px-4 py-2 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md font-bold hover:bg-surface-container-highest transition-colors" onclick="resetAndCloseForm()" type="button">
+              বাতিল
+            </button>
+<button class="px-6 py-2 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg font-bold hover:bg-primary-container shadow-md transition-all flex items-center gap-2" type="submit">
+<span class="material-symbols-outlined text-[18px]">check</span>
+              প্রোডাক্ট সেভ করুন
+            </button>
+</div>
+</div>
+</form>
+</div>
+<!-- Product Filter & Inventory Toolbar -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-2 w-full sm:w-auto">
+<div class="relative w-full sm:w-72">
+<span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</span>
+<input class="w-full pl-9 pr-4 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="inventorySearch" onkeyup="filterInventoryTable()" placeholder="পণ্য খুঁজুন বা ফিল্টার করুন..." type="text"/>
+</div>
+<select class="py-2 px-3 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold focus:outline-none shadow-inner" id="categoryFilter" onchange="filterInventoryTable()">
+<option value="ALL">সকল ক্যাটাগরি</option>
+<option value="অর্গানিক ফুড">অর্গানিক ফুড</option>
+<option value="ইলেকট্রনিক্স">ইলেকট্রনিক্স</option>
+<option value="ফ্যাশন ও লাইফস্টাইল">ফ্যাশন ও লাইফস্টাইল</option>
+</select>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant w-full sm:w-auto justify-end">
+<span>সাজানো হয়েছে: <strong class="text-on-surface">সর্বশেষ যুক্ত</strong></span>
+</div>
+</div>
+<!-- Inventory Data Table -->
+<div class="overflow-x-auto rounded-xl shadow-sm bg-surface-container-low/50">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high/70 text-on-surface font-label-md text-label-md uppercase tracking-wider">
+<th class="py-3 px-4 font-bold">পণ্য ও থাম্বনেইল</th>
+<th class="py-3 px-4 font-bold">ক্যাটাগরি</th>
+<th class="py-3 px-4 font-bold">মূল্য বিবরণী</th>
+<th class="py-3 px-4 font-bold text-center">স্টক অবস্থা</th>
+<th class="py-3 px-4 font-bold text-right">কার্যক্রম (Action)</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md" id="inventoryTableBody">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-highest/40 transition-colors" data-cat="অর্গানিক ফুড" data-id="PRD-101">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high shrink-0 overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A pristine jar of pure natural Sundarbans golden honey in clear glass bottle on a clean wooden organic aesthetic background with soft studio light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByVWOC6xDrMpSesG3mz-OeGXQ_Zvgff_sKck1-ZMlSNgk2903z4KpEaB4p9Svk6VGUHvAJ_PNPEoUz6lkaj1JU_hPxvNIApnzplm4CNAbGX9KscP1KV_vFYb4XuRofmYhV4dsw-9xZ9RjKw23ycNg9VOHUlFZqN6bi3vtssfxZHZqviUvOt6hzVEurro9Ke_YGUFc4v5t2SedbhuDmXh82NERl9vAKJpoLHETqaeQZKEYLolLMZdi8Uw"/>
+</div>
+<div>
+<div class="font-label-lg text-label-lg font-bold text-on-surface">সুন্দরবন খাঁটি মধু (৫০০ গ্রাম)</div>
+<div class="font-label-sm text-label-sm text-outline">SKU: HON-500 | আইডি: #PRD-101</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-label-md text-label-md text-on-surface-variant font-medium">অর্গানিক ফুড</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-bold text-primary">৳৭৫০</span>
+<span class="font-label-sm text-label-sm text-outline line-through">৳৯০০</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-center">
+<button class="stock-toggle-btn px-3 py-1 rounded-full font-label-sm text-label-sm font-bold bg-primary-container text-on-primary-container inline-flex items-center gap-1.5 transition-all" onclick="toggleItemStock(this)" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="stock-text">ইন স্টক</span>
+</button>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="inline-flex items-center gap-1.5">
+<button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-highest hover:text-primary transition-colors" onclick="editProduct('PRD-101', 'সুন্দরবন খাঁটি মধু (৫০০ গ্রাম)', 'অর্গানিক ফুড', 900, 750, 'খাঁটি ও প্রাকৃতিক কাঁচা মধু')" title="সম্পাদনা" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-2 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" onclick="deleteProduct('PRD-101', this)" title="মুছে ফেলুন" type="button">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-highest/40 transition-colors" data-cat="ইলেকট্রনিক্স" data-id="PRD-102">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high shrink-0 overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Modern wireless Bluetooth neckband earphones on a minimal sleek matte pedestal with emerald green subtle tech accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDPdxGOqgPMMXsXhpirIUFWqp4bL5U5x79QXXuQj2qQ3c3pah-mbsSbWUDSC5ZWo4ZdgE2N6jAVDgyyQiuJRIfAUcesMQh_yXkME1BW20y3itg5H_cT3qaqLo13Z-tZYOhKDLuDo0xsBlKu_EXn2W32meK_XZFHwi6_Od3vihuyylf8-gbedD4RKJFNob2ZRpzHhFRcWx08JB2SSw4L2haxH5zH_DOn30poX8LEPS-ngHvGPwuNSupgw"/>
+</div>
+<div>
+<div class="font-label-lg text-label-lg font-bold text-on-surface">ওয়্যারলেস ব্লুটুথ নেকব্যান্ড</div>
+<div class="font-label-sm text-label-sm text-outline">SKU: AUD-882 | আইডি: #PRD-102</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-label-md text-label-md text-on-surface-variant font-medium">ইলেকট্রনিক্স</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-bold text-primary">৳১,২০০</span>
+<span class="font-label-sm text-label-sm text-outline line-through">৳১,৫০০</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-center">
+<button class="stock-toggle-btn px-3 py-1 rounded-full font-label-sm text-label-sm font-bold bg-primary-container text-on-primary-container inline-flex items-center gap-1.5 transition-all" onclick="toggleItemStock(this)" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="stock-text">ইন স্টক</span>
+</button>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="inline-flex items-center gap-1.5">
+<button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-highest hover:text-primary transition-colors" onclick="editProduct('PRD-102', 'ওয়্যারলেস ব্লুটুথ নেকব্যান্ড', 'ইলেকট্রনিক্স', 1500, 1200, '৩০ ঘণ্টা ব্যাকআপ ও হাই বেস সাউন্ড')" title="সম্পাদনা" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-2 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" onclick="deleteProduct('PRD-102', this)" title="মুছে ফেলুন" type="button">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-highest/40 transition-colors" data-cat="ফ্যাশন ও লাইফস্টাইল" data-id="PRD-103">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high shrink-0 overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Exquisite handwoven traditional Bengali cotton kurti with delicate needlework embroidery on pure soft neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDskEEaw0DeMOQr5BFMZza0nkZeyRsPcITev7mPMDzLOau8eqnLwU2TU28_O9fUbwExzVwA7Ct3iIrjteAoRBp32DDNqKyB2LZekt7Ue-AJ8cHxb-UGylfGbb-edTKNdrxEN2Y2Z4kSPVpou6ZFUMxbi1H6CY14N-mGiw03FNwWxM7Egj9VUZfAvXHDqohDSVb21I3b2evW88K0mCVTa2Aax8uJDi9fNNlFzTHaczgZDpeg4Sj5gmhqw"/>
+</div>
+<div>
+<div class="font-label-lg text-label-lg font-bold text-on-surface">প্রিমিয়াম কটন হ্যান্ডলুম কুর্তি</div>
+<div class="font-label-sm text-label-sm text-outline">SKU: FAS-309 | আইডি: #PRD-103</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-label-md text-label-md text-on-surface-variant font-medium">ফ্যাশন ও লাইফস্টাইল</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-bold text-primary">৳১,৮৫০</span>
+<span class="font-label-sm text-label-sm text-outline line-through">৳২,২০০</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-center">
+<button class="stock-toggle-btn px-3 py-1 rounded-full font-label-sm text-label-sm font-bold bg-error text-on-error inline-flex items-center gap-1.5 transition-all" onclick="toggleItemStock(this)" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="stock-text">স্টক শেষ</span>
+</button>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="inline-flex items-center gap-1.5">
+<button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-highest hover:text-primary transition-colors" onclick="editProduct('PRD-103', 'প্রিমিয়াম কটন হ্যান্ডলুম কুর্তি', 'ফ্যাশন ও লাইফস্টাইল', 2200, 1850, '১০০% পিওর হ্যান্ডক্রাফটেড সুতি ফেব্রিক')" title="সম্পাদনা" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-2 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" onclick="deleteProduct('PRD-103', this)" title="মুছে ফেলুন" type="button">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-highest/40 transition-colors" data-cat="অর্গানিক ফুড" data-id="PRD-104">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high shrink-0 overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Traditional glass jar of golden aromatic organic pure cow ghee from Bangladesh village dairy farm surrounded by fresh green grass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6HNkclLXSsDBYOOaQz_CL5Ym-j1jKx0bo_l5oZBqEqdKoYm6k--4fKjnQlWo4i97WP7ghS04AWAKBOXCmO59xHWm_7yQv7Wll_RU-UZQNkHlT0LXOZRbuQsE0wxXeIcDqzR8M8vIYW6CWnd_DeFovQ5pzPUHXacapg2iiP72Ot1CNkG1_C_OEqsK4Y32FjHblG0ckYD1XXiOM7EfRuFxVEJmpfenXUeXGP4BjJW436bsp9iZa8GbP9g"/>
+</div>
+<div>
+<div class="font-label-lg text-label-lg font-bold text-on-surface">খাঁটি গাওয়া ঘি (১ কেজি)</div>
+<div class="font-label-sm text-label-sm text-outline">SKU: GHEE-1K | আইডি: #PRD-104</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-label-md text-label-md text-on-surface-variant font-medium">অর্গানিক ফুড</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-bold text-primary">৳১,৪৫০</span>
+<span class="font-label-sm text-label-sm text-outline line-through">৳১,৬৫০</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-center">
+<button class="stock-toggle-btn px-3 py-1 rounded-full font-label-sm text-label-sm font-bold bg-primary-container text-on-primary-container inline-flex items-center gap-1.5 transition-all" onclick="toggleItemStock(this)" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="stock-text">ইন স্টক</span>
+</button>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="inline-flex items-center gap-1.5">
+<button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-highest hover:text-primary transition-colors" onclick="editProduct('PRD-104', 'খাঁটি গাওয়া ঘি (১ কেজি)', 'অর্গানিক ফুড', 1650, 1450, 'গ্রামের তাজা দুধের ক্রিম হতে তৈরি সুস্বাদু গাওয়া ঘি')" title="সম্পাদনা" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-2 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" onclick="deleteProduct('PRD-104', this)" title="মুছে ফেলুন" type="button">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Inventory Table Footer / Pagination Notice -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-md mt-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<div>সর্বমোট ২৪টি পণ্যের মধ্যে ৪টি প্রদর্শিত হচ্ছে (পেজ ১/৬)</div>
+<div class="flex items-center gap-1">
+<button class="px-3 py-1.5 rounded bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-bold disabled:opacity-50" disabled="" type="button">পূর্ববর্তী</button>
+<span class="px-3 py-1.5 bg-primary text-on-primary rounded font-bold">১</span>
+<button class="px-3 py-1.5 rounded bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-bold" type="button">২</button>
+<button class="px-3 py-1.5 rounded bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-bold" type="button">৩</button>
+<button class="px-3 py-1.5 rounded bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-bold" type="button">পরবর্তী</button>
+</div>
+</div>
+</section>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toastNotification">
+<div class="flex items-center gap-3 px-4 py-3 rounded-xl bg-inverse-surface text-inverse-on-surface shadow-xl">
+<span class="material-symbols-outlined text-primary-fixed text-[22px]" id="toastIcon">check_circle</span>
+<span class="font-body-md text-body-md font-semibold" id="toastMessage">অপারেশন সফল হয়েছে</span>
+</div>
+</div>
+</div>
+<script>
+  // PIN Verification Simulation
+  function verifyPin() {
+    const pin = document.getElementById('pinCodeInput').value.trim();
+    const statusPill = document.getElementById('authStatusPill');
+    
+    if (pin === '1234' || pin === '১২৩৪') {
+      showToast('PIN সফলভাবে যাচাই করা হয়েছে! অ্যাডমিন সক্রিয়।', 'verified_user');
+      statusPill.className = 'bg-primary/10 text-primary font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-bold flex items-center gap-1.5';
+      statusPill.innerHTML = '<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span> সক্রিয় সেশন (PIN আনলকড)';
+    } else {
+      showToast('ভুল PIN প্রবেশ করানো হয়েছে! পুনরায় চেষ্টা করুন।', 'error');
+      statusPill.className = 'bg-error-container text-on-error-container font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-bold flex items-center gap-1.5';
+      statusPill.innerHTML = '<span class="w-2 h-2 rounded-full bg-error"></span> লকড / অবৈধ PIN';
+    }
+  }
+
+  function triggerLogout() {
+    const pinInput = document.getElementById('pinCodeInput');
+    const statusPill = document.getElementById('authStatusPill');
+    pinInput.value = '';
+    statusPill.className = 'bg-error-container text-on-error-container font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-bold flex items-center gap-1.5';
+    statusPill.innerHTML = '<span class="w-2 h-2 rounded-full bg-error"></span> লগআউট সম্পন্ন (লকড)';
+    showToast('অ্যাডমিন সেশন সমাপ্ত হয়েছে। লগইন করতে PIN দিন।', 'lock');
+  }
+
+  // Stock Toggle Simulation
+  function toggleItemStock(btn) {
+    const isCurrentlyInStock = btn.classList.contains('bg-primary-container');
+    const textSpan = btn.querySelector('.stock-text');
+    
+    if (isCurrentlyInStock) {
+      btn.className = 'stock-toggle-btn px-3 py-1 rounded-full font-label-sm text-label-sm font-bold bg-error text-on-error inline-flex items-center gap-1.5 transition-all';
+      textSpan.textContent = 'স্টক শেষ';
+      showToast('পণ্যের স্টক অবস্থা "স্টক শেষ" এ পরিবর্তন হয়েছে', 'remove_shopping_cart');
+    } else {
+      btn.className = 'stock-toggle-btn px-3 py-1 rounded-full font-label-sm text-label-sm font-bold bg-primary-container text-on-primary-container inline-flex items-center gap-1.5 transition-all';
+      textSpan.textContent = 'ইন স্টক';
+      showToast('পণ্যের স্টক সফলভাবে পুনরুজ্জীবিত হয়েছে', 'check_circle');
+    }
+  }
+
+  // WhatsApp Configuration & Template Preview
+  function saveWhatsappSettings(e) {
+    e.preventDefault();
+    const phone = document.getElementById('waPhoneNumber').value;
+    previewCustomerOrderMessage();
+    showToast(`হোয়াটসঅ্যাপ সেটিংস সংরক্ষিত (${phone})`, 'save');
+  }
+
+  function previewCustomerOrderMessage() {
+    const template = document.getElementById('waTemplate').value;
+    const compiled = template
+      .replace('{PRODUCT_NAME}', 'সুন্দরবন খাঁটি মধু (৫০০ গ্রাম)')
+      .replace('{PRICE}', '৭৫০')
+      .replace('{PRODUCT_ID}', 'PRD-101');
+    document.getElementById('previewTextContent').textContent = compiled;
+  }
+
+  // Firebase Realtime Sync Simulation
+  function triggerManualSync() {
+    const syncIcon = document.getElementById('syncIcon');
+    const syncBtn = document.getElementById('syncBtn');
+    
+    syncIcon.classList.add('rotate-180');
+    syncBtn.disabled = true;
+    showToast('ফায়ারবেস ডাটাবেজের সাথে সিঙ্কিং হচ্ছে...', 'sync');
+
+    setTimeout(() => {
+      syncIcon.classList.remove('rotate-180');
+      syncBtn.disabled = false;
+      showToast('ক্লাউড সিঙ্ক সফল! সমস্ত ডাটা আপ-টু-ডেট।', 'cloud_done');
+    }, 900);
+  }
+
+  // Product Add/Edit Form Controls
+  function toggleAddProductForm() {
+    const formContainer = document.getElementById('productFormContainer');
+    const isHidden = formContainer.classList.contains('hidden');
+    const toggleIcon = document.getElementById('addToggleIcon');
+    const toggleLabel = document.getElementById('addToggleLabel');
+
+    if (isHidden) {
+      formContainer.classList.remove('hidden');
+      toggleIcon.textContent = 'expand_less';
+      toggleLabel.textContent = 'ফর্ম লুকান';
+      formContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    } else {
+      resetAndCloseForm();
+    }
+  }
+
+  function resetAndCloseForm() {
+    const formContainer = document.getElementById('productFormContainer');
+    const form = document.getElementById('productCrudForm');
+    const toggleIcon = document.getElementById('addToggleIcon');
+    const toggleLabel = document.getElementById('addToggleLabel');
+
+    form.reset();
+    document.getElementById('editingProductId').value = '';
+    document.getElementById('formHeaderTitle').textContent = 'নতুন পণ্য অন্তর্ভুক্তি';
+    formContainer.classList.add('hidden');
+    toggleIcon.textContent = 'add_circle';
+    toggleLabel.textContent = 'নতুন প্রোডাক্ট যোগ করুন';
+  }
+
+  function editProduct(id, title, category, regularPrice, discountPrice, desc) {
+    const formContainer = document.getElementById('productFormContainer');
+    formContainer.classList.remove('hidden');
+    
+    document.getElementById('editingProductId').value = id;
+    document.getElementById('formHeaderTitle').textContent = `পণ্য সম্পাদনা (#${id})`;
+    document.getElementById('pTitle').value = title;
+    document.getElementById('pCategory').value = category;
+    document.getElementById('pRegularPrice').value = regularPrice;
+    document.getElementById('pDiscountPrice').value = discountPrice;
+    document.getElementById('pDescription').value = desc;
+
+    document.getElementById('addToggleIcon').textContent = 'expand_less';
+    document.getElementById('addToggleLabel').textContent = 'ফর্ম লুকান';
+    formContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    showToast(`এডিটর মোডে #${id} ওপেন হয়েছে`, 'edit_note');
+  }
+
+  function deleteProduct(id, buttonEl) {
+    if (confirm(`আপনি কি নিশ্চিতভাবে পণ্য #${id} স্থায়ীভাবে মুছে ফেলতে চান?`)) {
+      const row = buttonEl.closest('tr');
+      row.style.opacity = '0';
+      row.style.transform = 'translateX(20px)';
+      row.style.transition = 'all 0.3s ease';
+      
+      setTimeout(() => {
+        row.remove();
+        showToast(`পণ্য #${id} মুছে ফেলা হয়েছে`, 'delete_forever');
+      }, 300);
+    }
+  }
+
+  function handleProductSubmit(e) {
+    e.preventDefault();
+    const id = document.getElementById('editingProductId').value || 'PRD-' + Math.floor(100 + Math.random() * 900);
+    const title = document.getElementById('pTitle').value;
+    const cat = document.getElementById('pCategory').value;
+    const regular = document.getElementById('pRegularPrice').value;
+    const offer = document.getElementById('pDiscountPrice').value;
+    const inStock = document.getElementById('pInStockSwitch').checked;
+
+    const tbody = document.getElementById('inventoryTableBody');
+    const existingRow = document.querySelector(`tr[data-id="${id}"]`);
+
+    const stockHtml = inStock ? 
+      `<button type="button" onclick="toggleItemStock(this)" class="stock-toggle-btn px-3 py-1 rounded-full font-label-sm text-label-sm font-bold bg-primary-container text-on-primary-container inline-flex items-center gap-1.5 transition-all"><span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span><span class="stock-text">ইন স্টক</span></button>` :
+      `<button type="button" onclick="toggleItemStock(this)" class="stock-toggle-btn px-3 py-1 rounded-full font-label-sm text-label-sm font-bold bg-error text-on-error inline-flex items-center gap-1.5 transition-all"><span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span><span class="stock-text">স্টক শেষ</span></button>`;
+
+    if (existingRow) {
+      existingRow.setAttribute('data-cat', cat);
+      existingRow.innerHTML = `
+        <td class="py-3.5 px-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-lg bg-surface-container-high shrink-0 overflow-hidden relative shadow-sm">
+              <img src="placeholder" data-alt="Product display image showing ${title} with crisp clean background" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <div class="font-label-lg text-label-lg font-bold text-on-surface">${title}</div>
+              <div class="font-label-sm text-label-sm text-outline">SKU: UPD-${id} | আইডি: #${id}</div>
+            </div>
+          </div>
+        </td>
+        <td class="py-3.5 px-4 font-label-md text-label-md text-on-surface-variant font-medium">${cat}</td>
+        <td class="py-3.5 px-4">
+          <div class="flex items-center gap-2">
+            <span class="font-label-lg text-label-lg font-bold text-primary">৳${offer}</span>
+            <span class="font-label-sm text-label-sm text-outline line-through">৳${regular}</span>
+          </div>
+        </td>
+        <td class="py-3.5 px-4 text-center">${stockHtml}</td>
+        <td class="py-3.5 px-4 text-right">
+          <div class="inline-flex items-center gap-1.5">
+            <button type="button" onclick="editProduct('${id}', '${title}', '${cat}', ${regular}, ${offer}, '')" class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-highest hover:text-primary transition-colors">
+              <span class="material-symbols-outlined text-[20px]">edit</span>
+            </button>
+            <button type="button" onclick="deleteProduct('${id}', this)" class="p-2 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-error transition-colors">
+              <span class="material-symbols-outlined text-[20px]">delete</span>
+            </button>
+          </div>
+        </td>
+      `;
+      showToast(`পণ্য #${id} সফলভাবে আপডেট হয়েছে!`, 'check');
+    } else {
+      const newTr = document.createElement('tr');
+      newTr.className = 'hover:bg-surface-container-highest/40 transition-colors';
+      newTr.setAttribute('data-id', id);
+      newTr.setAttribute('data-cat', cat);
+      newTr.innerHTML = `
+        <td class="py-3.5 px-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-lg bg-surface-container-high shrink-0 overflow-hidden relative shadow-sm">
+              <img src="placeholder" data-alt="Freshly listed catalog product showcase for ${title} on a studio white setup" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <div class="font-label-lg text-label-lg font-bold text-on-surface">${title}</div>
+              <div class="font-label-sm text-label-sm text-outline">SKU: NEW-${id} | আইডি: #${id}</div>
+            </div>
+          </div>
+        </td>
+        <td class="py-3.5 px-4 font-label-md text-label-md text-on-surface-variant font-medium">${cat}</td>
+        <td class="py-3.5 px-4">
+          <div class="flex items-center gap-2">
+            <span class="font-label-lg text-label-lg font-bold text-primary">৳${offer}</span>
+            <span class="font-label-sm text-label-sm text-outline line-through">৳${regular}</span>
+          </div>
+        </td>
+        <td class="py-3.5 px-4 text-center">${stockHtml}</td>
+        <td class="py-3.5 px-4 text-right">
+          <div class="inline-flex items-center gap-1.5">
+            <button type="button" onclick="editProduct('${id}', '${title}', '${cat}', ${regular}, ${offer}, '')" class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-highest hover:text-primary transition-colors">
+              <span class="material-symbols-outlined text-[20px]">edit</span>
+            </button>
+            <button type="button" onclick="deleteProduct('${id}', this)" class="p-2 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-error transition-colors">
+              <span class="material-symbols-outlined text-[20px]">delete</span>
+            </button>
+          </div>
+        </td>
+      `;
+      tbody.prepend(newTr);
+      showToast('নতুন পণ্য ইনভেন্টরিতে যুক্ত হয়েছে!', 'library_add_check');
+    }
+
+    resetAndCloseForm();
+  }
+
+  // Filter Table by Search and Category
+  function filterInventoryTable() {
+    const searchVal = document.getElementById('inventorySearch').value.toLowerCase();
+    const catVal = document.getElementById('categoryFilter').value;
+    const rows = document.querySelectorAll('#inventoryTableBody tr');
+
+    rows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      const rowCat = row.getAttribute('data-cat');
+      
+      const matchesSearch = text.includes(searchVal);
+      const matchesCat = catVal === 'ALL' || rowCat === catVal;
+
+      if (matchesSearch && matchesCat) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  }
+
+  // Simple Notification Toast
+  let toastTimer;
+  function showToast(message, iconName = 'info') {
+    const toast = document.getElementById('toastNotification');
+    const msgEl = document.getElementById('toastMessage');
+    const iconEl = document.getElementById('toastIcon');
+
+    msgEl.textContent = message;
+    iconEl.textContent = iconName;
+
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3200);
+  }
+</script></main></div></body></html>
